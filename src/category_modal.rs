@@ -28,12 +28,14 @@ pub fn CategoryModal(
 
     view! {
         <div class="modal-backdrop" on:click=move |_| on_close()>
-            <div class="modal" on:click=|e| e.stop_propagation()>
+            <div class="modal category-modal" on:click=|e| e.stop_propagation()>
                 <button class="modal-close" on:click=move |_| on_close()>"×"</button>
-                <h2>"Select Categories"</h2>
-                <p style="color: #aaa; margin-bottom: 1rem;">
-                    "Click categories to filter. Size indicates frequency."
-                </p>
+                <div style="padding: 2rem 2rem 0 2rem;">
+                    <h2 style="padding: 0; margin: 0 0 0.5rem 0;">"Select Categories"</h2>
+                    <p style="color: #aaa; margin: 0;">
+                        "Click categories to filter. Size indicates frequency."
+                    </p>
+                </div>
                 <div class="word-cloud">
                     {move || {
                         let mut cats: Vec<_> = categories.get().into_iter().collect();
@@ -59,9 +61,9 @@ pub fn CategoryModal(
                         }).collect::<Vec<_>>()
                     }}
                 </div>
-                <div style="display: flex; gap: 1rem; margin-top: 1rem;">
-                    <button on:click=clear_all>"Clear All"</button>
-                    <button on:click=move |_| on_close()>"Apply"</button>
+                <div style="display: flex; gap: 1rem; padding: 1.5rem 2rem 2rem 2rem;">
+                    <button on:click=clear_all style="flex: 1;">"Clear All"</button>
+                    <button on:click=move |_| on_close() style="flex: 1;">"Apply"</button>
                 </div>
             </div>
         </div>
