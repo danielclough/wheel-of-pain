@@ -13,9 +13,12 @@ pub fn WheelComponent(
     set_rotation: WriteSignal<f64>,
     set_velocity: WriteSignal<f64>,
     is_spinning: ReadSignal<bool>,
+    set_is_spinning: WriteSignal<bool>,
+    velocity: ReadSignal<f64>,
 ) -> impl IntoView {
     let (is_dragging, set_is_dragging) = signal(false);
     let (last_angle, set_last_angle) = signal(0.0);
+    let (drag_velocity, set_drag_velocity) = signal(0.0);
     let node_ref: NodeRef<svg::Svg> = NodeRef::new();
 
     let get_angle_from_event = move |client_x: i32, client_y: i32| -> f64 {
@@ -54,13 +57,24 @@ pub fn WheelComponent(
                 delta
             };
             set_rotation.update(|r| *r += normalized_delta);
-            set_velocity.set(normalized_delta);
+            set_drag_velocity.set(normalized_delta);
             set_last_angle.set(angle);
         }
     };
 
     let on_mouse_up = move |_| {
+        let current_drag_velocity = drag_velocity.get().abs();
         set_is_dragging.set(false);
+
+        // If released with sufficient drag velocity, throw the wheel
+        if current_drag_velocity > 0.5 {
+            set_is_spinning.set(true);
+            // Amplify the drag velocity for a satisfying throw (multiply by ~15-25)
+            let throw_velocity = current_drag_velocity * (18.0 + (rand::random::<f64>() * 7.0));
+            set_velocity.set(throw_velocity.min(50.0)); // Cap at reasonable max
+        }
+
+        set_drag_velocity.set(0.0);
     };
 
     let colors = [
@@ -71,15 +85,83 @@ pub fn WheelComponent(
         <svg
             node_ref=node_ref
             class=move || if is_spinning.get() { "wheel-svg spinning" } else { "wheel-svg" }
-            width="500"
-            height="500"
             viewBox="-250 -250 500 500"
             on:mousedown=on_mouse_down
             on:mousemove=on_mouse_move
             on:mouseup=on_mouse_up
             on:mouseleave=on_mouse_up
+            style=move || {
+                let v = velocity.get();
+                // Enhanced 3D tilt effect based on velocity
+                let tilt = (v / 20.0).min(20.0); // Max 20deg tilt for more drama
+                // Slight rotation on Y axis for depth
+                let y_tilt = (v / 40.0).min(5.0);
+                // Scale effect: wheel grows slightly when spinning fast
+                let scale = 1.0 + (v / 200.0).min(0.08);
+                // Drop shadow intensity based on velocity
+                let shadow_blur = (v / 1.5).min(30.0);
+                let shadow_offset = (v / 3.0).min(15.0);
+                let shadow_opacity = (v / 40.0).min(0.9);
+                // Additional glow
+                let glow_spread = (v / 4.0).min(8.0);
+
+                format!(
+                    "transform: perspective(1200px) rotateX({}deg) rotateY({}deg) scale({}); \
+                     filter: drop-shadow(0 {}px {}px rgba(255, 107, 53, {})) \
+                             drop-shadow(0 0 {}px rgba(255, 107, 53, {})); \
+                     transition: transform 0.05s ease-out;",
+                    tilt, y_tilt, scale,
+                    shadow_offset, shadow_blur, shadow_opacity,
+                    glow_spread, shadow_opacity * 0.6
+                )
+            }
         >
-            <g transform=move || format!("rotate({})", rotation.get())>
+            <defs>
+                // Enhanced motion blur filter
+                <filter id="motionBlur">
+                    <feGaussianBlur in="SourceGraphic" stdDeviation=move || {
+                        let v = velocity.get();
+                        // More dramatic blur at high speeds
+                        format!("{},0", (v / 3.5).min(12.0))
+                    } />
+                </filter>
+
+                // Enhanced glow filter with brightness boost
+                <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+                    <feGaussianBlur stdDeviation=move || {
+                        let v = velocity.get();
+                        // Dynamic glow that increases with speed
+                        format!("{}", 3.0 + (v / 10.0).min(6.0))
+                    } result="coloredBlur"/>
+                    <feColorMatrix in="coloredBlur" type="matrix"
+                        values="1 0 0 0 0
+                                0 1 0 0 0
+                                0 0 1 0 0
+                                0 0 0 1.5 0" result="brightBlur"/>
+                    <feMerge>
+                        <feMergeNode in="brightBlur"/>
+                        <feMergeNode in="SourceGraphic"/>
+                    </feMerge>
+                </filter>
+            </defs>
+
+            <g
+                transform=move || format!("rotate({})", rotation.get())
+                filter=move || {
+                    let v = velocity.get();
+                    // More gradual filter transitions for smoother visuals
+                    if v > 15.0 {
+                        "url(#motionBlur) url(#glow)"
+                    } else if v > 5.0 {
+                        "url(#glow)"
+                    } else if v > 1.0 {
+                        "url(#glow)"
+                    } else {
+                        "none"
+                    }
+                }
+                style="transition: filter 0.2s ease-out;"
+            >
                 {move || {
                     let e = entries.get();
                     let count = e.len().max(1);
