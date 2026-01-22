@@ -64,7 +64,7 @@ fn App() -> impl IntoView {
         set_filtered_entries.set(filtered);
     };
 
-    // Animation loop effect with smooth easing
+    // Animation loop effect with smooth easing - optimized to only trigger on velocity changes
     Effect::new(move |_| {
         let current_velocity = velocity.get();
         let current_spinning = is_spinning.get();
@@ -75,23 +75,18 @@ fn App() -> impl IntoView {
 
             // Improved easing with exponential decay and smooth landing
             let new_velocity = if current_velocity > 20.0 {
-                // Fast spin phase: minimal friction
                 current_velocity * 0.985
             } else if current_velocity > 8.0 {
-                // Medium spin: increased friction
                 current_velocity * 0.97
             } else if current_velocity > 2.0 {
-                // Slowing down: more friction
                 current_velocity * 0.94
             } else if current_velocity > 0.5 {
-                // Final approach: smooth landing
                 current_velocity * 0.88
             } else {
-                // Very slow: rapid stop
                 current_velocity * 0.75
             };
 
-            // Schedule next frame
+            // Schedule next frame using RAF
             request_animation_frame(move || {
                 set_velocity.set(new_velocity);
             });
@@ -104,8 +99,6 @@ fn App() -> impl IntoView {
             let entries = filtered_entries.get();
             if !entries.is_empty() {
                 let segment_angle = 360.0 / entries.len() as f64;
-                // Arrow is at top (270 degrees). Find which segment is there.
-                // After rotating by final_angle, the segment originally at (270 - final_angle) is now at top
                 let arrow_position = 270.0;
                 let target_angle = ((arrow_position - final_angle) % 360.0 + 360.0) % 360.0;
                 let selected_idx = (target_angle / segment_angle) as usize % entries.len();
