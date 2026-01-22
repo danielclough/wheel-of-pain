@@ -1,0 +1,620 @@
+
+-  
+  title: The Oldoway Man
+  claim: A skeletally modern homo sapien skeleton found in Middle Pleistocene deposits in Olduvai Gorge dating to ~700,000 years old
+  description: Skeleton found in 1913 by Hans Reck in Tanzania appeared to be nearly a million years old based on depositional layer. Louis Leakey later proved it was an intrusive burial from ~20,000 years ago. Most records and the skeleton itself were lost in WWI and WWII.
+  category: ["skeleton"]
+  episode: 1
+  url: https://www.youtube.com/watch?v=USHWhxlJLj8&list=PLXtMIzD-Y-bM_5Bw-AYVh_0DZKhMuk87d&index=1
+  drink:
+  sponsor:
+
+-  
+  title: The Orontius Finaeus Map
+  claim: 1531 map supposedly shows ice-free Antarctica, proving ancient advanced civilizations mapped the continent
+  description: Map created by French cartographer Oronce Finé actually shows a massive inference connecting Australia to South America, not Antarctica. Conspiracy theorists like Charles Hapgood and Graham Hancock manipulated the map by rotating, scaling, and editing it to fit their claims.
+  category: ["map"]
+  episode: 2
+  url: https://www.youtube.com/watch?v=dBRMy-6YXcs&list=PLXtMIzD-Y-bM_5Bw-AYVh_0DZKhMuk87d&index=2
+  drink:
+  sponsor:
+
+-  
+  title: The Grave Creek Stone
+  claim: Mysterious artifact with unknown language found in West Virginia burial mound in 1838
+  description: Small sandstone disk allegedly found clutched in skeletal hands bearing mysterious characters. Various researchers claimed it was Iberian, Punic, or other Mediterranean scripts. Used to support white supremacist theories about European contact with Americas. Most interpretations were inconsistent and likely a hoax.
+  category: ["artifact"]
+  episode: 3
+  url: https://www.youtube.com/watch?v=-6JeTtPJMGo&list=PLXtMIzD-Y-bM_5Bw-AYVh_0DZKhMuk87d&index=3
+  drink:
+  sponsor:
+
+-  
+  title: Creationist Footprint Conspiracies
+  claim: Human and dinosaur footprints found together proving young Earth creationism
+  description: Examination of various footprint claims used to support creationist timelines, including Paluxy River tracks
+  category: ["creationism"]
+  episode: 4
+  url: https://www.youtube.com/watch?v=lfhE266Nfbk&list=PLXtMIzD-Y-bM_5Bw-AYVh_0DZKhMuk87d&index=4
+  drink:
+  sponsor:
+
+-  
+  title: The Dendera Light
+  claim: Ancient Egyptian relief depicts electric light bulbs proving ancient advanced technology
+  description: Relief at Temple of Hathor shows lotus flower with snake inside, claimed by pseudoarchaeologists to be a light bulb and filament. Actually depicts Egyptian mythological symbolism. Egyptologist Wolfgang Waitkus confirmed hieroglyphs describe mythological content, not technology.
+  category: ["technology"]
+  episode: 5
+  url: https://www.youtube.com/watch?v=2OOrlhtdONE&list=PLXtMIzD-Y-bM_5Bw-AYVh_0DZKhMuk87d&index=5
+  drink:
+  sponsor:
+
+-
+  title: Baghdad Battery
+  claim: Ancient Parthian artifacts were primitive electrical batteries proving advanced ancient technology
+  description: Clay jars with iron rods and copper cylinders from Mesopotamia claimed to be 2000-year-old batteries, likely storage vessels for scrolls
+  category: ["technology"]
+  episode: [6, 6.5]
+  url: [https://www.youtube.com/watch?v=lfhE266Nfbk&list=PLXtMIzD-Y-bM_5Bw-AYVh_0DZKhMuk87d&index=6, https://www.youtube.com/watch?v=lfhE266Nfbk&list=PLXtMIzD-Y-bM_5Bw-AYVh_0DZKhMuk87d&index=7]
+  drink:
+  sponsor:
+
+-  
+  title: The Gosford Glyphs
+  claim: Ancient Egyptian hieroglyphs in Australia prove Egyptians sailed there 5000 years ago
+  description: Carvings in Brisbane Water National Park claimed to tell story of two Egyptian princes shipwrecked in Australia. Egyptologists unanimously agree they are modern forgeries with numerous errors no ancient Egyptian scribe would make.
+  category: ["artifact"]
+  episode: 7
+  url: https://www.youtube.com/watch?v=30jMvj4L_jo&list=PLXtMIzD-Y-bM_5Bw-AYVh_0DZKhMuk87d&index=8
+  drink:
+  sponsor:
+
+-
+  title: Nebraska Man
+  claim: Tooth found in Nebraska in 1917 belonged to extinct North American great ape or human ancestor
+  description: Harold Cook found tooth identified by Henry Fairfield Osborn as Hesperopithecus haroldcookii. Later expeditions found more remains proving it was actually from an extinct peccary (pig-like mammal). Used by creationists to discredit evolution despite being example of science self-correcting.
+  category: ["skeleton", "creationism"]
+  episode: 8
+  url: https://www.youtube.com/watch?v=lfhE266Nfbk&list=PLXtMIzD-Y-bM_5Bw-AYVh_0DZKhMuk87d&index=9
+  drink:
+  sponsor:
+
+-
+  title: "City of Apollo"
+  claim:
+  description:
+  category: []
+  episode: 
+  url: 
+  drink:
+  sponsor:
+  
+-
+  title: "Aquatic Ape Theory"
+  claim:
+  description:
+  category: []
+  episode: 
+  url: 
+  drink:
+  sponsor:
+  
+-
+  title: "Graham Hancock, Fi..."
+  claim:
+  description:
+  category: []
+  episode: 
+  url: 
+  drink:
+  sponsor:
+  
+-
+  title: "Smiley seashell"
+  claim:
+  description:
+  category: []
+  episode: 
+  url: 
+  drink:
+  sponsor:
+  
+-
+  title: "Atlantis"
+  claim:
+  description:
+  category: []
+  episode: 
+  url: 
+  drink:
+  sponsor:
+  
+-
+  title: "Ahmet Osman"
+  claim:
+  description:
+  category: []
+  episode: 
+  url: 
+  drink:
+  sponsor:
+  
+-
+  title: "Piri Reis map"
+  claim:
+  description:
+  category: []
+  episode: 
+  url: 
+  drink:
+  sponsor:
+  
+-
+  title: "The Paluxy Tracks"
+  claim:
+  description:
+  category: []
+  episode: 
+  url: 
+  drink:
+  sponsor:
+  
+-
+  title: "Cardiff Giant"
+  claim:
+  description:
+  category: []
+  episode: 
+  url: 
+  drink:
+  sponsor:
+  
+-
+  title: "Nazca Lines"
+  claim:
+  description:
+  category: []
+  episode: 
+  url: 
+  drink:
+  sponsor:
+  
+-
+  title: "Primal Mama"
+  claim:
+  description:
+  category: []
+  episode: 
+  url: 
+  drink:
+  sponsor:
+  
+-
+  title: "Diquis stone spheres"
+  claim:
+  description:
+  category: []
+  episode: 
+  url: 
+  drink:
+  sponsor:
+  
+-
+  title: "The Brixham man"
+  claim:
+  description:
+  category: []
+  episode: 
+  url: 
+  drink:
+  sponsor:
+  
+-
+  title: "Zacharia Sitchin"
+  claim:
+  description:
+  category: []
+  episode: 
+  url: 
+  drink:
+  sponsor:
+  
+-
+  title: "The Shoe Print"
+  claim:
+  description:
+  category: []
+  episode: 
+  url: 
+  drink:
+  sponsor:
+  
+-
+  title: "Ussherian Man"
+  claim:
+  description:
+  category: []
+  episode: 
+  url: 
+  drink:
+  sponsor:
+  
+-
+  title: "Lovelock Cave"
+  claim:
+  description:
+  category: []
+  episode: 
+  url: 
+  drink:
+  sponsor:
+  
+-
+  title: "Tranquil Monument"
+  claim:
+  description:
+  category: []
+  episode: 
+  url: 
+  drink:
+  sponsor:
+  
+-
+  title: "The Dropa stones"
+  claim:
+  description:
+  category: []
+  episode: 
+  url: 
+  drink:
+  sponsor:
+  
+-
+  title: "Iron Relics"
+  claim:
+  description:
+  category: []
+  episode: 
+  url: 
+  drink:
+  sponsor:
+  
+-
+  title: "Baigong Pipes"
+  claim:
+  description:
+  category: []
+  episode: 
+  url: 
+  drink:
+  sponsor:
+  
+-
+  title: "Theomene Orokaiva Child"
+  claim:
+  description:
+  category: []
+  episode: 
+  url: 
+  drink:
+  sponsor:
+  
+-
+  title: "Sponges"
+  claim:
+  description:
+  category: []
+  episode: 
+  url: 
+  drink:
+  sponsor:
+  
+-
+  title: "Paluxy Dinosaur tracks"
+  claim:
+  description:
+  category: []
+  episode: 
+  url: 
+  drink:
+  sponsor:
+  
+-
+  title: "Astec Tools"
+  claim:
+  description:
+  category: []
+  episode: 
+  url: 
+  drink:
+  sponsor:
+  
+-
+  title: "The Guanabara Z."
+  claim:
+  description:
+  category: []
+  episode: 
+  url: 
+  drink:
+  sponsor:
+  
+-
+  title: "Phillipe Epplet M."
+  claim:
+  description:
+  category: []
+  episode: 
+  url: 
+  drink:
+  sponsor:
+  
+-
+  title: "Heporobod Chronology"
+  claim:
+  description:
+  category: []
+  episode: 
+  url: 
+  drink:
+  sponsor:
+  
+-
+  title: "Sarsens"
+  claim:
+  description:
+  category: []
+  episode: 
+  url: 
+  drink:
+  sponsor:
+  
+-
+  title: "Castenedolo Skull"
+  claim:
+  description:
+  category: []
+  episode: 
+  url: 
+  drink:
+  sponsor:
+  
+-
+  title: "The Shikuna mysticism"
+  claim:
+  description:
+  category: []
+  episode: 
+  url: 
+  drink:
+  sponsor:
+  
+-
+  title: "Tocopilla Facts"
+  claim:
+  description:
+  category: []
+  episode: 
+  url: 
+  drink:
+  sponsor:
+  
+-
+  title: "Crystal Skull"
+  claim:
+  description:
+  category: []
+  episode: 
+  url: 
+  drink:
+  sponsor:
+  
+-
+  title: "Lost City of the Kalahari"
+  claim:
+  description:
+  category: []
+  episode: 
+  url: 
+  drink:
+  sponsor:
+  
+-
+  title: "Giants"
+  claim:
+  description:
+  category: []
+  episode: 
+  url: 
+  drink:
+  sponsor:
+  
+-
+  title: "Folsom Jawbone"
+  claim:
+  description:
+  category: []
+  episode: 
+  url: 
+  drink:
+  sponsor:
+  
+-
+  title: "Wonderstone sphere"
+  claim:
+  description:
+  category: []
+  episode: 
+  url: 
+  drink:
+  sponsor:
+  
+-
+  title: "Forbidden archaeology"
+  claim:
+  description:
+  category: []
+  episode: 
+  url: 
+  drink:
+  sponsor:
+  
+-
+  title: "Walls Reservoir..."
+  claim:
+  description:
+  category: []
+  episode: 
+  url: 
+  drink:
+  sponsor:
+  
+-
+  title: "Ravlandan alien ce..."
+  claim:
+  description:
+  category: []
+  episode: 
+  url: 
+  drink:
+  sponsor:
+  
+-
+  title: "Candelabra of the..."
+  claim:
+  description:
+  category: []
+  episode: 
+  url: 
+  drink:
+  sponsor:
+  
+-
+  title: "Antikythera mechanism"
+  claim:
+  description:
+  category: []
+  episode: 
+  url: 
+  drink:
+  sponsor:
+  
+-
+  title: "Curtis Cube"
+  claim:
+  description:
+  category: []
+  episode: 
+  url: 
+  drink:
+  sponsor:
+  
+-
+  title: "Egyptomania Airplanes"
+  claim:
+  description:
+  category: []
+  episode: 
+  url: 
+  drink:
+  sponsor:
+  
+-
+  title: "Egyptian Airplanes"
+  claim:
+  description:
+  category: []
+  episode: 
+  url: 
+  drink:
+  sponsor:
+  
+-
+  title: "Castaneda Skull"
+  claim:
+  description:
+  category: []
+  episode: 
+  url: 
+  drink:
+  sponsor:
+  
+-
+  title: "American Stonehenge"
+  claim:
+  description:
+  category: []
+  episode: 
+  url: 
+  drink:
+  sponsor:
+  
+-
+  title: "Dorchester Vase"
+  claim:
+  description:
+  category: []
+  episode: 
+  url: 
+  drink:
+  sponsor:
+  
+-
+  title: "Beartooth Highway Molar"
+  claim:
+  description:
+  category: []
+  episode: 
+  url: 
+  drink:
+  sponsor:
+  
+-
+  title: "Acambaro Figurines"
+  claim:
+  description:
+  category: []
+  episode: 
+  url: 
+  drink:
+  sponsor:
+  
+-
+  title: "The Shroud of Turin"
+  claim:
+  description:
+  category: []
+  episode: 
+  url: 
+  drink:
+  sponsor:
+  
+-
+  title: "Ica Stones"
+  claim:
+  description:
+  category: []
+  episode: 
+  url: 
+  drink:
+  sponsor:
+  
+-
+  title: "Foghelin Rocks"
+  claim:
+  description:
+  category: []
+  episode: 
+  url: 
+  drink:
+  sponsor:
+  
+-
+  title: "Oopart Stories"
+  claim:
+  description:
+  category: []
+  episode: 
+  url: 
+  drink:
+  sponsor:

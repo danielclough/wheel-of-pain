@@ -1,0 +1,8 @@
+/target
+/dist
+
+# wildcard
+*.md
+
+# allow
+!README.md
